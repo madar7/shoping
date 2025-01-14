@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
-        color: Colors.limeAccent,
+        color: Colors.lightBlueAccent,
         height: 60.0,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -28,8 +28,11 @@ class _HomePageState extends State<HomePage> {
       ),
       appBar: AppBar(
         elevation: 0.1,
-        backgroundColor: Colors.limeAccent,
-        title: Text('SUUQA NASIYE'),
+        backgroundColor: Colors.lightBlueAccent,
+        title: Text('IbrozExpress',style:TextStyle(color: Colors.white,
+            fontSize: 30.0,
+        fontWeight: FontWeight.bold),
+        ),
         actions: <Widget>[
           IconButton(
               icon: Icon(
@@ -47,6 +50,7 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: Drawer(
         child: ListView(
+          scrollDirection: Axis.vertical,
           children: <Widget>[
             //header
             UserAccountsDrawerHeader(
